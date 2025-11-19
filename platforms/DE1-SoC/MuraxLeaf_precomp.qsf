@@ -1,0 +1,43 @@
+#
+# Copyright (C) 2019
+# Authors: Wen Wang <wen.wang.ww349@yale.edu> 
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+# main definitions
+source common.qsf
+
+set_global_assignment -name TOP_LEVEL_ENTITY MuraxHW
+
+# HDL source code files
+set_global_assignment -name VERILOG_FILE ../../src/hw_core/util/clog2.v 
+
+set_global_assignment -name VERILOG_FILE MuraxHW.v
+set_global_assignment -name VERILOG_FILE ../rtl/Apb3GenLeaf.v 
+set_global_assignment -name VERILOG_FILE ../rtl/wrapper/gen_leaf_wrapper.v
+set_global_assignment -name VERILOG_FILE ../rtl/BlockRam.v
+
+set_global_assignment -name VERILOG_FILE ../../src/hw_core/wots/gen_leaf/gen_leaf.v
+set_global_assignment -name VERILOG_FILE ../../src/hw_core/wots/gen_pk/gen_pk.v
+set_global_assignment -name VERILOG_FILE ../../src/hw_core/wots/l_tree/l_tree.v
+set_global_assignment -name VERILOG_FILE ../../src/hw_core/wots/thash_f/thash_f.v
+set_global_assignment -name VERILOG_FILE ../../src/hw_core/wots/thash_h/thash_h.v
+set_global_assignment -name VERILOG_FILE ../../src/hw_core/wots/gen_chain/gen_chain.v
+set_global_assignment -name VERILOG_FILE ../../src/hw_core/wots/seed_expand/seed_expand.v 
+set_global_assignment -name VERILOG_FILE ../../src/hw_core/hash/sha256XMSSprecomp.v 
+set_global_assignment -name VERILOG_FILE ../../src/hw_core/hash/sha256.v
+set_global_assignment -name VERILOG_FILE ../../src/hw_core/util/mem_dual.v
+set_global_assignment -name VERILOG_FILE ../../src/hw_core/util/delay.v
+ 
