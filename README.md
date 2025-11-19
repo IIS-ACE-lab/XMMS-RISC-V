@@ -2,12 +2,13 @@
 
 - [Index](#index)
 - [Description](#description) 
-- [Code Organization](#code)
-- [Install Pre-requisites](#install)
-- [Tools Versions](#tool)
+- [Code Organization](#code-organization)
+- [Install Pre-requisites](#install-pre-requisites)
+- [Tool Versions](#tool-versions)
 - [Simulation](#simulation)
-- [Real Tests On FPGAs](#fpga)
-- [Contact](#contact) 
+- [Real Tests On FPGAs](#real-tests-on-fpgas)
+- [Contact](#contact)
+- [Cite As](#cite-as)
 
 ## Description
 
@@ -97,7 +98,7 @@ Install Verilator (for simulation):
 sudo apt-get install verilator
 ```
 
-## Tools Versions
+## Tool Versions
 
 Here are the versions of the tools that we use locally for testing, we recommend that users use the same version of the tools.
 
@@ -361,4 +362,13 @@ The outputs are displayed in the minicom window (Step 2).
 [Jakub Szefer](http://csl.yale.edu/~jakub/): jakub.szefer@yale.edu 
 
 [Ruben Niederhagen](http://polycephaly.org/): ruben@polycephaly.org
+
+## Cite As
+
+Please cite this work as:
+
+Wen Wang, Bernhard Jungk, Julian Wälde, Shuwen Deng, Naina Gupta, Jakub Szefer, and Ruben Niederhagen:
+"XMSS and Embedded Systems: XMSS Hardware Accelerators for RISC-V"
+Selected Areas in Cryptography — SAC 2019, Lecture Notes in Computer Science, Vol. 11959, pp. 523—550. Springer, 2020.
+https://doi.org/10.1007/978-3-030-38471-5_21
 
